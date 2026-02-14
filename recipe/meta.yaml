@@ -1,5 +1,5 @@
 {% set name = "langchain-postgres" %}
-{% set version = "0.0.15" %}
+{% set version = "0.0.16" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/langchain_postgres-{{ version }}.tar.gz
-  sha256: d6be01ab3a802881e7dcd16439a4efda5a8eba15c368e04fe9a96134ad90854e
+  sha256: d09aa4ea77ee8600a9ff64de9c185fb558aa388c816c7be04dd4559c878530b7
 
 build:
   noarch: python
