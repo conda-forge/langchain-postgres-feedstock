@@ -13,10 +13,11 @@ Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=26449&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/langchain-postgres-feedstock?branchName=main">
+      <a href="https://github.com/conda-forge/langchain-postgres-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/langchain-postgres-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
       </a>
     </td>
   </tr>
@@ -39,31 +40,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `langchain-postgres` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install langchain-postgres
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install langchain-postgres
 ```
 
-It is possible to list all of the versions of `langchain-postgres` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add langchain-postgres
+# for installing globally
+pixi global install langchain-postgres
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `langchain-postgres` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search langchain-postgres --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search langchain-postgres --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search langchain-postgres --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -75,6 +118,8 @@ mamba repoquery whoneeds langchain-postgres --channel conda-forge
 # List dependencies of `langchain-postgres`:
 mamba repoquery depends langchain-postgres --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
