@@ -23,11 +23,12 @@ requirements:
   run:
     - python >={{ python_min }}
     - asyncpg >=0.30.0
-    - langchain-core >=0.2.13,<0.4.0
+    - langchain-core >=1.2.11,<2.0
     - pgvector-python >=0.2.5,<0.4
     - psycopg >=3,<4
     - psycopg-pool >=3.2.1,<4
     - sqlalchemy >=2,<3
+    - greenlet  # sqlalchemy[asyncio] extra
     - numpy >=1.21,<3
 
 test:
