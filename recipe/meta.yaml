@@ -28,7 +28,7 @@ requirements:
     - psycopg >=3,<4
     - psycopg-pool >=3.2.1,<4
     - sqlalchemy >=2,<3
-    - greenlet  # sqlalchemy[asyncio] extra
+    - greenlet
     - numpy >=1.21,<3
 
 test:
